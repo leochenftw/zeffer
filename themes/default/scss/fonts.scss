@@ -1,0 +1,44 @@
+/*
+@import "compass/css3/font-face";
+
+@include font-face('knockout', font-files('Knockout-HTF48-Featherweight.woff','Knockout-HTF48-Featherweight.otf', 'Knockout-HTF48-Featherweight.ttf', 'Knockout-HTF48-Featherweight.svg'), 'Knockout-HTF48-Featherweight.eot');
+
+@include font-face('whitneylight', font-files('whitneyhtf-light-webfont.woff','whitneyhtf-light-webfont.otf', 'whitneyhtf-light-webfont.ttf', 'whitneyhtf-light-webfont.svg'), 'whitneyhtf-light-webfont.eot', lighter);
+
+@include font-face('whitney', font-files('whitneyhtf-semibold-webfont.woff','whitneyhtf-semibold-webfont.otf', 'whitneyhtf-semibold-webfont.ttf', 'whitneyhtf-semibold-webfont.svg'), 'whitneyhtf-semibold-webfont.eot', bold);
+
+@include font-face('whitney', font-files('whitneyhtf-book-webfont.woff','whitneyhtf-book-webfont.otf', 'whitneyhtf-book-webfont.ttf', 'whitneyhtf-book-webfont.svg'), 'whitneyhtf-book-webfont.eot', normal);
+*/
+
+@mixin knockout {
+	font-family: 'Knockout 28 A', 'Knockout 28 B'; font-weight: normal; font-style: normal;
+}
+
+@mixin whitney {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: normal;
+}
+
+@mixin whitneyBook {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: normal;
+}
+
+@mixin whitneyBookItalic {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: italic;
+}
+
+@mixin whitneyBold {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 700; font-style: normal;
+}
+
+@mixin whitneyMedium {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 500; font-style: normal;
+}
+
+@mixin whitneyBoldItalic {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 700; font-style: italic;
+}
+
+@mixin whitneyLight {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 300; font-style: normal;
+	//font-family: 'whitneylight', Helvetica, Arial, sans-serif;
+}

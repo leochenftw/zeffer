@@ -1,0 +1,21 @@
+/* @import 'styles'; */
+
+#contact {
+	a[href^="tel"] {
+		cursor: none !important;
+	}
+}
+
+body.mobile {
+	#contact {
+		margin-top: 0;
+		
+		.panel {
+			padding: 16px !important;
+		}
+		
+		img {
+			display: none;
+		}
+	}
+}

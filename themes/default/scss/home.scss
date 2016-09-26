@@ -1,0 +1,275 @@
+@import 'compass/css3', 'compass/typography/text/replacement';
+
+$jumbo-layout:smart;
+@import "jumbo-sprites/*.png";
+@include all-jumbo-sprites-sprites;
+
+.tablet {
+	#carousel {
+		position: absolute;
+		
+		.next {
+			&:hover,
+			&:active {
+				@include sprites-sprite(right_arrow);
+			}
+		}
+		
+		.previous {
+			&:hover,
+			&:active {
+				@include sprites-sprite(left_arrow);
+			}
+		}
+	}
+}
+
+#carousel {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+	&:before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		
+		@include box-shadow(#000 0px 0px 80px inset);
+	}
+	
+	ul {
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		top: 0;
+/* 		z-index: -1; */
+	}
+	
+	ul,
+	li {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	
+	li {
+		display: none;
+		width: 100%;
+		height: 100%;
+		background-attachment: fixed;
+		@include background-size(cover);
+		background-repeat: none;
+		position: absolute;
+		z-index: 1;
+		
+		&.active {
+			z-index: 10;
+		}
+		
+		span,
+		a {
+			display: block;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			z-index: 500;
+			@include hide_text;
+		}
+		
+		&.active {
+			display: block;
+		}
+		
+		&._1 {
+			background-image: url(../img/jumbo/Jumbo_1_MatakanaSun.jpg);
+			span,
+			a {
+				@include jumbo-sprites-sprite(we-make-delicious-cider);
+				width: 653px;
+				height: 286px;
+				margin-left: -(653/2)+px;
+				margin-top: -(286/2)+px;
+			}
+		}
+		
+		&._2 {
+			background-image: url(../img/jumbo/Jumbo_2_ApplePear.jpg);
+			
+			span,
+			a {
+				@include jumbo-sprites-sprite(we-make-a-mighty-tasty-drop-or-two);
+				width: 656px;
+				height: 235px;
+				margin-left: -(656/2)+px;
+				margin-top: -(235/2)+px;
+			}
+		}
+		
+		&._3 {
+			background-image: url(../img/jumbo/Jumbo_3_SMG.jpg);
+			span,
+			a {
+				@include jumbo-sprites-sprite(we-even-make-brews-that-are-a-little-more-fancy);
+				width: 628px;
+				height: 262px;
+				margin-left: -(628/2)+px;
+				margin-top: -(262/2)+px;
+			}
+		}
+		
+		&._4 {
+			background-image: url(../img/jumbo/Jumbo_4_PakiriDune.jpg);
+			span,
+			a {
+				@include jumbo-sprites-sprite(were-based-in-summer-country);
+				width: 655px;
+				height: 302px;
+				margin-left: -(655/2)+px;
+				margin-top: -(302/2)+px;
+			}
+		}
+		
+		&._5 {
+			background-image: url(../img/jumbo/Jumbo_5_Friends.jpg);
+			span,
+			a {
+				@include jumbo-sprites-sprite(we-like-you-already);
+				width: 615px;
+				height: 244px;
+				margin-left: -(615/2)+px;
+				margin-top: -(244/2)+px;
+			}
+		}
+		
+		&._6 {
+			background-image: url(../img/jumbo/Jumbo_6_Markets.jpg);
+			span,
+			a {
+				@include jumbo-sprites-sprite(if-you-fancy-a-taste);
+				width: 644px;
+				height: 319px;
+				margin-left: -(644/2)+px;
+				margin-top: -(319/2)+px;
+			}
+		}
+	}
+	
+	nav {
+		position: absolute;
+		z-index: 11;
+		left: 50%;
+		top: 50%;
+		margin-left: -(960/2)+px;
+		overflow: visible;
+		
+		a {
+			display: block;
+			width: 42px;
+			height: 41px;
+			position: absolute;
+			top: -20px;
+			@include hide_text;
+			@include opacity(1.0);
+			@include transition(opacity .5s);
+			
+			//&.hide {
+				@include opacity(0);
+			//}
+		}
+		
+		.previous {
+			@include sprites-sprite(left_arrow);
+			left: 0;
+			
+			&:hover {
+				@include sprites-sprite(left_arrow_over);
+			}
+		}
+		
+		.next {
+			@include sprites-sprite(right_arrow);
+			right: 0;
+			
+			&:hover {
+				@include sprites-sprite(right_arrow_over);
+			}
+		}
+	}
+}
+
+
+//	iPad
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+	#carousel {
+		li {
+			background-attachment: scroll;
+			@include background-size(none);
+			@include translate(translate3d(0,0,0));
+		}
+	}
+}
+
+// iPad Portrait
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	#carousel {
+		li {
+			background-position-x: 45%;
+			@include background-size(auto);
+			@include translate(translate3d(0,0,0));
+		}
+	}
+}
+
+
+
+body.mobile {
+	#carousel {
+		position: relative;
+		width: 100%;
+		height: 400px;
+		li {
+			background-attachment: scroll;
+		}
+		
+		li span {
+			width: 557px;
+			height: 294px;
+			margin-left: -279px;
+/* 			margin-top: -147px; */
+			@include sprites-sprite(mobile-we-make-delicious-cider);
+			@include transform(scale(.5));
+		}
+		
+		.next {
+			@include opacity(1);
+			left: 50%;
+			margin-left: -30px;
+			width: 61px;
+			height: 64px;
+			top: 0;
+			@include transform(scale(.5));
+			@include sprites-sprite(mobile_down_arrow);
+		}
+		
+		nav {
+			left: 0;
+			height: 64px;
+			margin-left:0;
+			top: 70%;
+		}
+	}
+}

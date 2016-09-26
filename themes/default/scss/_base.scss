@@ -1,0 +1,13 @@
+$sprites-layout:smart;
+@import "sprites/*.png";
+@include all-sprites-sprites;
+
+$ciders-layout:smart;
+@import "ciders/*.png";
+@include all-ciders-sprites;
+
+$sprites-layout: smart;
+@import "sprites/*.png";
+@include all-sprites-sprites;
+
+$orange: #eb8823;

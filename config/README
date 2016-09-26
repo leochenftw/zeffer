@@ -1,0 +1,10 @@
+/* ===========================
+ * MAIN CONFIG SETTINGS.
+ * =========================== */
+ 
+1. _config: Copy this to /main
+2. _ss_environment.php: copy this to 1 level above your root directory - e.g. htdocs. Edit your Connection string.
+3. .htaccess: Copy to / if not present already.
+3. ss_silverstripe.dump: import into MySQL.
+
+REMOVE THIS DIRECTORY WHEN EVERYTHING HAS BEEN SETUP.

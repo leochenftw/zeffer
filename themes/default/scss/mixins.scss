@@ -1,0 +1,94 @@
+@mixin opacity($value) {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $value + ")";
+  	filter: alpha(opacity=$value);
+	-moz-opacity: $value/100;
+	-ktml-opacity: $value/100;
+	-webkit-opacity: $value/100;
+	opacity: $value/100;
+}
+
+@mixin hide_text {
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+}
+
+@mixin sprite($x, $y: 0, $sprite: '../images/sprite.png?v=6') {
+	background: transparent url($sprite) no-repeat;// !important;
+	background-position: -$x + px + ' ' + -$y + px;// !important;
+}
+
+@mixin boxShadow($x, $y, $blur, $colour) {
+	-moz-box-shadow: $x $y $blur $colour;
+	-webkit-box-shadow: $x $y $blur $colour;
+  	box-shadow: $x $y $blur $colour;
+}
+
+@mixin innerboxShadow($x, $y, $blur, $colour) {
+	-moz-box-shadow: inset $x $y $blur $colour;
+	-webkit-box-shadow: inset $x $y $blur $colour;
+  	box-shadow: inset $x $y $blur $colour;
+}
+
+@mixin noBoxShadow {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+  	box-shadow: none;
+}
+
+@mixin rotate($angle) {
+	-webkit-transform: rotate($angle + deg);
+	-moz-transform: rotate($angle + deg);
+	-ms-transform: rotate($angle + deg);
+	-o-transform: rotate($angle + deg);
+	transform: rotate($angle + deg);
+}
+
+@mixin origin($x, $y) {
+	-webkit-transform-origin: $x $y;
+	-moz-transform-origin: $x $y;
+	-ms-transform-origin: $x $y;
+	-o-transform-origin: $x $y;
+	transform-origin: $x $y;
+}
+
+@mixin skew($angle) {
+	-webkit-transform: skew($angle + deg);
+	-moz-transform: skew($angle + deg);
+	-ms-transform: skew($angle + deg);
+	-o-transform: skew($angle + deg);
+	transform: skew($angle + deg);
+}
+
+@mixin border-radius($radius) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin transition($property: all, $speed: .1s, $ease: ease) {
+	-webkit-transition: $property $speed $ease;
+	-moz-transition: $property $speed $ease;
+	transition: $property $speed $ease;
+	
+	//-webkit-backface-visibility: hidden;
+}
+
+@mixin webkitTransitionFix {
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+
+@mixin transitionDelay($delay: .5s) {
+	transition-delay: $delay;
+	-moz-transition-delay: $delay; /* Firefox 4 */
+	-webkit-transition-delay: $delay; /* Safari and Chrome */
+	-o-transition-delay: $delay; /* Opera */
+}
+
+@mixin gradient($from, $to) {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+	background-image: -webkit-linear-gradient(bottom, $to, $from); 
+	background-image: -moz-linear-gradient(bottom, $to, $from);
+	background-image: -ms-linear-gradient(bottom, $to, $from);
+}
