@@ -1,5 +1,22 @@
-var _BASEIMAGEFOLDER = '/themes/default/img/';
+var _BASEIMAGEFOLDER = '/themes/default/img/',
+	_qr = $('<div />').attr('id', 'the-qr');
+//_qr.html('<img src="/themes/default/img/map.gif" />');
 jQuery(document).ready(function($) {
+	$('#pop-qr').click(function(e) {
+        e.preventDefault();
+		if ($('#the-qr').length > 0) {
+			_qr.remove();
+			$(window).unbind('mousedown');
+		} else {
+			_qr.appendTo('body');
+			$(window).mousedown(function(e) {
+                if (!$(e.target).is('#the-qr') && !$(e.target).parent().is('#the-qr')) {
+					_qr.remove();
+					$(window).unbind('mousedown');
+				}
+            });
+		}
+    });
 	$('.spec .circles').each(function(index, element) {
         var n = parseInt($(this).attr('data-value'));
 		var cross = null;

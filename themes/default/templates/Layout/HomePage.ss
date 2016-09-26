@@ -135,6 +135,9 @@
         					<h2>Sales &amp; Marketing</h2>
         					<p><a href="mailto:josh@zeffer.co.nz">josh@zeffer.co.nz</a><br/>
 							<a href="tel:021 223 2800">(021) 223 2800</a></p>
+							<h2>NZ Distributor</h2>
+							<p><a href="http://quenchcollective.co.nz" target="_blank">Quench Collective</a><br />
+							<a href="tel:0800 946 326">0800 946 326</a></p>
         				</div>
 						<div class="grid_3 tail">
         					<h2>Visit us for Cider</h2>
@@ -148,6 +151,7 @@
         					<li class="facebook"><a href="https://www.facebook.com/zeffercider" target="_blank">facebook.com/zeffercider</a></li>
         					<li class="twitter"><a href="https://twitter.com/zeffercider" target="_blank">@zeffercider</a></li>
         					<li class="instagram"><a href="http://instagram.com/zeffercider" target="_blank">zeffercider</a></li>
+							<li class="wechat"><a id="pop-qr" href="/#">ZefferCider</a></li>
         					<li class="email"><a href="mailto:info@zeffer.co.nz">info@zeffer.co.nz</a></li>
         				</ul>
         			</div>
