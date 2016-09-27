@@ -1,22 +1,8 @@
 var _BASEIMAGEFOLDER = '/themes/default/img/',
 	_qr = $('<div />').attr('id', 'the-qr');
-//_qr.html('<img src="/themes/default/img/map.gif" />');
+_qr.html('<img src="' + _BASEIMAGEFOLDER + 'qr-code.jpg" />');
 jQuery(document).ready(function($) {
-	$('#pop-qr').click(function(e) {
-        e.preventDefault();
-		if ($('#the-qr').length > 0) {
-			_qr.remove();
-			$(window).unbind('mousedown');
-		} else {
-			_qr.appendTo('body');
-			$(window).mousedown(function(e) {
-                if (!$(e.target).is('#the-qr') && !$(e.target).parent().is('#the-qr')) {
-					_qr.remove();
-					$(window).unbind('mousedown');
-				}
-            });
-		}
-    });
+	
 	$('.spec .circles').each(function(index, element) {
         var n = parseInt($(this).attr('data-value'));
 		var cross = null;
@@ -662,6 +648,24 @@ var grid3Top = parseInt($(this).find('.grid_3').css('top'));
 	$('.email a').click(function() {
 		_gaq.push(['_trackEvent', 'Contact Links', 'Click', 'Email']);
 	});
+	
+	$('#pop-qr').click(function(e) {
+        e.preventDefault();
+		if ($('#the-qr').length > 0) {
+			_qr.remove();
+			$(window).unbind('mousedown');
+		} else {
+			_qr.appendTo('body');
+			$(window).mousedown(function(e) {
+                if (!$(e.target).is('#the-qr') && !$(e.target).parent().is('#the-qr')) {
+					_qr.remove();
+					$(window).unbind('mousedown');
+				}
+            });
+		}
+		_gaq.push(['_trackEvent', 'Contact Links', 'Click', 'WeChat']);
+		return false;
+    });
 });
 
 function rand(min, max) {
