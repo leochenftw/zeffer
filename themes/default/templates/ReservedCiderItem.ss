@@ -5,6 +5,9 @@
 			$Image.SetWidth(300)
 		</div>
 		<div class="grid_8">
+			<% if $SoldOut %>
+				<div class="sold-out"><Strong>[SOLD OUT]</strong></div>
+			<% end_if %>
 			<div class="reserve-range-heading">
 				<h2 class="no-indent heading-item" data-name="Name">$Title</h2>
 				<div class="product-style heading-item" data-name="Style">$ProductStyle</div>
