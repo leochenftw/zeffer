@@ -25,7 +25,7 @@
 }
 
 #ciders .new-cider {
-	
+
 	overflow: visible;
 }
 
@@ -41,13 +41,13 @@ body.mobile,
 body.mobile:before,
 body.mobile:after,
 body.mobile *,
-body.mobile *:before, 
+body.mobile *:before,
 body.mobile *:after,
-.new-cider, 
-.new-cider:before, 
+.new-cider,
+.new-cider:before,
 .new-cider:after,
 .new-cider *,
-.new-cider *:before, 
+.new-cider *:before,
 .new-cider *:after {
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -117,7 +117,7 @@ body.mobile *:after,
 }
 
 .new-cider .grid_8 .spec.iconized {
-	
+
 }
 
 .new-cider .grid_8 .spec.iconized .icon,
@@ -369,7 +369,7 @@ body.mobile *:after,
 }
 
 #ciders .new-cider .intro {
-	color: #243063;	
+	color: #243063;
 }
 
 /* overriding */
@@ -409,7 +409,7 @@ section.background {
 	display: block;
 	background: url(../img/new-zeffer-logo.png) no-repeat center center;
 	background-size: auto 60px;
-	
+
 }
 
 #logo a:after {
@@ -469,17 +469,17 @@ section.background {
 	body.mobile #statement {
 		display: block;
 	}
-	
+
 	body.mobile #header,
 	body.mobile #header nav,
 	body.mobile #header nav li {
 		height: 41px;
 	}
-	
+
 	#statement .panel {
 		padding-top: 2em !important;
 	}
-	
+
 	#statement .grid_6,
 	#statement .grid_5 {
 		margin-left: 0;
@@ -487,7 +487,7 @@ section.background {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	
+
 	.new-cider .group {
 		padding-bottom: 4em;
 		margin-bottom: 3em;
@@ -501,11 +501,11 @@ section.background {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-	
+
 	body.mobile #contact .grid_3.tail {
 		margin-left: 0;
 	}
-	
+
 	.container_12 .grid_4,
 	.container_12 .grid_8,
 	.new-cider .grid_8 .spec:nth-child(even),
@@ -517,46 +517,46 @@ section.background {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	
+
 	.new-cider {
 		margin-top: 0;
 		margin-bottom: 0;
 		padding-top: 0;
 	}
-	
+
 	#ciders .new-cider h2 {
 		padding-top: 35.10416666666667%;
 		height: 0 !important;
 		background-size: 100% auto !important;
 		margin-bottom: 0.5em;
 	}
-	
+
 	.new-cider .grid_8 .spec.title-full-width .circles .col {
 		height: 51px;
 	}
-	
+
 	.new-cider .grid_8 .spec.title-full-width:nth-child(even) {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-	
+
 	#ciders .new-cider.reserved-range .reserve-range-heading {
 		padding-right: 0;
 		background: none;
 	}
-	
+
 	#ciders .new-cider.reserved-range .heading-item {
 		font-size: 14pt;
 	}
-	
+
 	#ciders .new-cider.reserved-range h2.heading-item {
 		height: auto;
 	}
-	
+
 	.new-cider .grid_8 .spec.full-width {
 		height: auto;
 	}
-	
+
 	#ciders .new-cider.reserved-range .spec .sub-spec.spec-vintage,
 	.new-cider .grid_8 .spec.full-width .sub-spec {
 		float: none;
@@ -564,16 +564,16 @@ section.background {
 		border-bottom: 1px dotted #8a6c25;
 		width: 100%;
 	}
-	
+
 	.new-cider .grid_8 .spec.full-width .sub-spec:last-child {
 		border: none;
 	}
-	
+
 	#ciders .new-cider.reserved-range .alcohol-wrapper {
 		padding-left: 0.5em;
 		font-size: 16px;
 	}
-	
+
 	body.mobile #stockists form {
 		margin-top: 2em;
 	}
@@ -581,4 +581,8 @@ section.background {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+}
+
+#carousel li._5 {
+    background-position: center;
 }
