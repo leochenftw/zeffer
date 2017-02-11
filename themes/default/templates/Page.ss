@@ -25,6 +25,16 @@
 	</head>
 	<body class="page-$URLSegment<% if isMobile %> mobile<% end_if %><% if isTablet %> tablet<% end_if %>">
 		$Layout
+        <% if $PopupAds && $PopupOn %>
+            <div id="overlay-tray"></div>
+            <div class="pop-up">
+                <a href="$PopupURL"<% if $TargetBlank %> target="_blank"<% end_if %>>$PopupAds.SetWidth(640)</a>
+                <div class="options">
+                    <label for="show-no-more"><input id="show-no-more" type="checkbox" /> Don't show again</label>
+                    <button class="button close">Close</button>
+                </div>
+            </div>
+        <% end_if %>
 		$getRequireJS
 	</body>
 </html>

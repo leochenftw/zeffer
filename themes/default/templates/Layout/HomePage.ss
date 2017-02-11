@@ -86,7 +86,7 @@
                         <p>After long wintery nights crushing, an exploding fruit press, experimental brews and many hours spent hand bottling, we had our first 3,000L batch ready for release in the Spring of 2009. </p>
                     </div>
                     <div class="grid_6">
-                        <p>We sold it exclusively through our local Matakana Farmers market and were rewarded with great feedback, eager buyers and steady growth which allowed us to build our own cidery in Silverdale in 2012.</p><p>The thirst for Zeffer has continued to increase and now reaches offshore. To facilitate our next stage of growth we are building a new cidery in the beautiful Hawkes Bay (beside our apples). </p>
+                        <p>We sold it exclusively through our local Matakana Farmers market and were rewarded with great feedback, eager buyers and steady growth which allowed us to build our own cidery in Silverdale in 2012.</p><p>The thirst for Zeffer has continued to increase and now reaches offshore. To facilitate our next stage of growth we are building a new cidery in the beautiful Hawke's Bay (beside our apples). </p>
                         <p>We remain faithful to our simple vision and ethos of making cider that we are both proud to put our name on and love to drink. We are passionate about real New Zealand cider and it’s  a privilige to be able to share it with you.</p>
                         <strong>Cheers, <br />
                         The Team at Zeffer</strong>
