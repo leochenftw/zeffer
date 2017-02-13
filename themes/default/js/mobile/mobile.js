@@ -64,6 +64,23 @@ require(['zepto', 'zeptoScroll', 'maps', 'scroll'], function($) {
 		_gaq.push(['_trackEvent', 'Contact Links', 'Click', 'WeChat']);
 		return false;
     });
+
+    if (window.localStorage !== undefined) {
+        if (window.localStorage.show_pop != 'false') {
+            $('.pop-up, #overlay-tray').show();
+        } else {
+            $('#overlay-tray, .pop-up').remove();
+        }
+    }
+
+	$('.button.close, #overlay-tray').click(function(e)
+    {
+        e.preventDefault();
+        if ($('#show-no-more').prop('checked')) {
+            window.localStorage.show_pop = false;
+        }
+        $('#overlay-tray, .pop-up').remove();
+    });
 });
 
 function rand(min, max) {
