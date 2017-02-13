@@ -3,7 +3,7 @@ class HomePage extends Page {
 
 	public static $db = array(
         'PopupOn'       =>  'Boolean',
-        'PopupURL'      =>  'Varchar',
+        'PopupURL'      =>  'Varchar(1024)',
         'TargetBlank'   =>  'Boolean'
 	);
 
