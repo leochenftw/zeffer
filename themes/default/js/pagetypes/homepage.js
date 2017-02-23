@@ -62,20 +62,29 @@ if(typeof _gaq == 'undefined') {
 
 require(['jquery', 'visible', 'main', 'maps', 'scroll'], function($) {
 
-    if (window.localStorage !== undefined) {
-        if (window.localStorage.show_pop != 'false') {
-            $('.pop-up, #overlay-tray').show();
-        } else {
-            $('#overlay-tray, .pop-up').remove();
+    if ($('body').hasClass('notification-bar')) {
+        $('.button.close').click(function(e)
+        {
+            e.preventDefault();
+            $('body').removeClass('notification-bar');
+            $('.pop-up').remove();
+        });
+    } else {
+        if (window.localStorage !== undefined) {
+            if (window.localStorage.show_pop != 'false') {
+                $('.pop-up, #overlay-tray').show();
+            } else {
+                $('#overlay-tray, .pop-up').remove();
+            }
         }
-    }
 
-	$('.button.close, #overlay-tray').click(function(e)
-    {
-        e.preventDefault();
-        if ($('#show-no-more').prop('checked')) {
-            window.localStorage.show_pop = false;
-        }
-        $('#overlay-tray, .pop-up').remove();
-    });
+    	$('.button.close, #overlay-tray').click(function(e)
+        {
+            e.preventDefault();
+            if ($('#show-no-more').prop('checked')) {
+                window.localStorage.show_pop = false;
+            }
+            $('#overlay-tray, .pop-up').remove();
+        });
+    }
 });

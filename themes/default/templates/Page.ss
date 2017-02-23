@@ -23,16 +23,22 @@
 		<script src="$ThemeDir/js/lib/modernizr.min.js" defer="defer"></script>
 		<% include GA %>
 	</head>
-	<body class="page-$URLSegment<% if isMobile %> mobile<% end_if %><% if isTablet %> tablet<% end_if %>">
+	<body class="page-$URLSegment<% if isMobile %> mobile<% end_if %><% if isTablet %> tablet<% end_if %><% if $NotificationMode %> notification-bar<% end_if %>">
 		$Layout
         <% if $PopupAds && $PopupOn %>
-            <div id="overlay-tray"></div>
+            <% if not $NotificationMode %><div id="overlay-tray"></div><% end_if %>
             <div class="pop-up">
-                <a href="$PopupURL"<% if $TargetBlank %> target="_blank"<% end_if %>>$PopupAds.SetWidth(640)</a>
-                <div class="options">
-                    <label for="show-no-more"><input id="show-no-more" type="checkbox" /> Don't show again</label>
-                    <button class="button close">Close</button>
-                </div>
+                <% if $NotificationMode %>
+                    <button class="button close">+</button>
+                    <span>$PopupTitle</span>
+                    <a href="$PopupURL"<% if $TargetBlank %> target="_blank"<% end_if %>>Learn more ›</a>
+                <% else %>
+                    <a href="$PopupURL"<% if $TargetBlank %> target="_blank"<% end_if %>>$PopupAds.SetWidth(640)</a>
+                    <div class="options">
+                        <label for="show-no-more"><input id="show-no-more" type="checkbox" /> Don't show again</label>
+                        <button class="button close">Close</button>
+                    </div>
+                <% end_if %>
             </div>
         <% end_if %>
 		$getRequireJS

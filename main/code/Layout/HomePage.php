@@ -2,9 +2,11 @@
 class HomePage extends Page {
 
 	public static $db = array(
-        'PopupOn'       =>  'Boolean',
-        'PopupURL'      =>  'Varchar(1024)',
-        'TargetBlank'   =>  'Boolean'
+        'PopupTitle'        =>  'Varchar(1024)',
+        'PopupOn'           =>  'Boolean',
+        'PopupURL'          =>  'Varchar(1024)',
+        'TargetBlank'       =>  'Boolean',
+        'NotificationMode'  =>  'Boolean'
 	);
 
 	public static $has_one = array(
@@ -19,6 +21,10 @@ class HomePage extends Page {
         $fields->addFieldsToTab(
             'Root.PopUp',
             array(
+                TextField::create(
+                    'PopupTitle',
+                    'Popup title'
+                ),
                 CheckboxField::create(
                     'PopupOn',
                     'Turn on pop-up'
@@ -34,6 +40,10 @@ class HomePage extends Page {
                 UploadField::create(
                     'PopupAds',
                     'Popup image'
+                ),
+                CheckboxField::create(
+                    'NotificationMode',
+                    'Show as a notification bar'
                 )
             )
         );

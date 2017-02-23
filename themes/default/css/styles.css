@@ -636,3 +636,135 @@ section.background {
 .pop-up .options label {
     margin-right: 1em;
 }
+
+.notification-bar {
+    padding-top: 60px;
+}
+
+.notification-bar #header {
+    top: 60px;
+}
+
+.notification-bar .pop-up,
+.notification-bar .pop-up:before,
+.notification-bar .pop-up:after,
+.notification-bar .pop-up *,
+.notification-bar .pop-up *:before,
+.notification-bar .pop-up *:after {
+    box-sizing: border-box;
+}
+
+.notification-bar .pop-up {
+    background-color: #4D762D;
+    display: block;
+    top: 0;
+    left: 0;
+    webkit-transform: none;
+    transform: none;
+    max-width: none;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-bar .pop-up a,
+.notification-bar .pop-up button.button,
+.notification-bar .pop-up span {
+    color: #fff;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+}
+
+.notification-bar .pop-up a {
+    box-shadow: none;
+}
+
+.notification-bar .pop-up button.button {
+    padding: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #4D762D;
+    font-family: 'Whitney SSm A', 'Whitney SSm B';
+    font-size: 30px;
+    font-weight: bold;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+@media (max-width: 479px) {
+    .notification-bar .pop-up {
+        padding: 0 10px;
+    }
+
+    .notification-bar .pop-up a,
+    .notification-bar .pop-up button.button,
+    .notification-bar .pop-up span {
+        font-size: 14px;
+    }
+
+    .notification-bar .pop-up a {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 0;
+        width: calc(100% - 40px);
+        height: 100%;
+        text-indent: -10000px;
+        overflow: hidden;
+        display: block;
+    }
+
+    .notification-bar .pop-up button.button {
+        width: 20px;
+        height: 20px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+
+@media (max-width: 374px) {
+    .notification-bar .pop-up {
+        padding: 0 10px;
+    }
+
+    .notification-bar .pop-up a,
+    .notification-bar .pop-up button.button,
+    .notification-bar .pop-up span {
+        font-size: 11px;
+    }
+
+    .notification-bar .pop-up a {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 0;
+        width: calc(100% - 40px);
+        height: 100%;
+        text-indent: -10000px;
+        overflow: hidden;
+        display: block;
+    }
+
+    .notification-bar .pop-up button.button {
+        width: 20px;
+        height: 20px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
