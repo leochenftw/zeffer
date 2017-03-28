@@ -706,6 +706,10 @@ section.background {
     -webkit-transform: rotate(45deg);
 }
 
+#madewithlove .panel {
+    background-color: #F8F8E0;
+}
+
 @media (max-width: 479px) {
     .notification-bar .pop-up {
         padding: 0 10px;
