@@ -61,6 +61,7 @@ if(typeof _gaq == 'undefined') {
 }
 
 require(['jquery', 'visible', 'main', 'maps', 'scroll'], function($) {
+    
 
     if ($('body').hasClass('notification-bar')) {
         $('.button.close').click(function(e)

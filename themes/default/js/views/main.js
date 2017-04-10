@@ -2,6 +2,23 @@ var _BASEIMAGEFOLDER = '/themes/default/img/',
 	_qr = $('<div />').attr('id', 'the-qr');
 _qr.html('<img src="' + _BASEIMAGEFOLDER + 'qr-code.jpg" />');
 jQuery(document).ready(function($) {
+    $('#show-youtube').click(function(e)
+    {
+        e.preventDefault();
+        var overlay = $('<div />').attr('id', 'youtube-overlay-tray'),
+            btn = $('<button />').addClass('button');
+        btn.html('+');
+        overlay.append(btn);
+        $('body').append(overlay.show());
+        $('#youtube-holder').show();
+        overlay.click(function(e)
+        {
+            e.preventDefault();
+            $('#youtube-holder').hide();
+            overlay.remove();
+        });
+    });
+
 	$('.spec .circles').each(function(index, element) {
         var n = parseInt($(this).attr('data-value'));
 		var cross = null;
@@ -539,7 +556,37 @@ $(this).find('.grid_9').css({
 		}, 500);
 	});
 	var started = false;
+
+
 	$(window).scroll(function(e) {
+
+        $('#ciders .new-cider .group .grid_4').each(function(i, el)
+        {
+            var sibling = $(this).parent().find('.grid_8');
+            var imgHeight = $(this).find('img').height();
+            var fixedHeight = $('#header').outerHeight() + ($('#ciders header').outerHeight() ? ($('#ciders header').outerHeight() + 8) : 0);
+            var offset = $(this).offset().top - $(window).scrollTop();//;($(window).scrollTop() + $('#header').outerHeight() + fixedHeight);
+            var padding = offset * -1  + fixedHeight;
+            var siblingFinished = function()
+                {
+                    return imgHeight + padding >= sibling.outerHeight() + 50;//sibling.offset().top + sibling.outerHeight() + 100 - ($(window).scrollTop() + $(window).height()) <= 0;
+                };
+            if (padding >= 0) {
+                if (siblingFinished()) {
+                    padding = sibling.outerHeight() - imgHeight;
+                }
+                $(this).find('img').css({
+                    '-webkit-transform': 'translateY(' + padding + 'px)',
+                    'transform': 'translateY(' + padding + 'px)'
+                });
+            } else {
+                $(this).find('img').removeAttr('style');
+            }
+        });
+
+        console.log('-------------------------');
+
+
 		// nothing to see here folks
 		if(!$('body').is('.mobile, .tablet')) {
 			setActive();

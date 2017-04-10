@@ -1,5 +1,5 @@
 <div id="$Id" class="row new-cider reserved-range clearfix">
-	
+
 	<div class="group clearfix"<% if $BorderImage %> style="background: url($BorderImage.SetWidth(960).URL) no-repeat center top;"<% end_if %>>
 		<div class="grid_4 alpha">
 			$Image.SetWidth(300)

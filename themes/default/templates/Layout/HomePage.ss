@@ -73,9 +73,15 @@
         </section>
 
         <section id="statement" class="background fullheight">
+            <div id="youtube-holder" class="hide">
+                <div class="responsive-iframe">
+                    <iframe width="960" height="540" src="https://www.youtube.com/embed/i8H9fZFQ3xs" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
             <div class="panel">
                 <div class="container_12">
-                    <div class="grid_5"><h1>The Zeffer Story</h1></div>
+                    <div class="grid_8"><h1>The Zeffer Story</h1></div>
+                    <div class="grid_4"><a id="show-youtube" class="flag-button" href="https://youtu.be/i8H9fZFQ3xs" target="_blank">Watch how we make Zeffer</a></div>
                 </div>
 
                 <div class="container_12 border-bottom">
@@ -154,6 +160,7 @@
                             <li class="instagram"><a href="http://instagram.com/zeffercider" target="_blank">zeffercider</a></li>
                             <li class="wechat"><a id="pop-qr" href="/#">ZefferCider</a></li>
                             <li class="email"><a href="mailto:info@zeffer.co.nz">info@zeffer.co.nz</a></li>
+                            <li class="newsletter"><a href="https://confirmsubscription.com/h/d/70DB7D1922B72023" target="_blank">Sign up to our Newsletter</a></li>
                         </ul>
                     </div>
                 </div>
