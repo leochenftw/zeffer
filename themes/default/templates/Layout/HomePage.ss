@@ -137,6 +137,10 @@
                             Silverdale,<br>
                             Auckland<br>
                             <a href="tel:09 215 6028">(09) 215 6028</a></p>
+                            <h2>Physical Address</h2>
+                            <p>1747 Korokipo Rd, RD3, Fernhill<br>
+                            Hawke’s Bay 4185<br>
+                            <a href="tel:06 650 1836">(06) 650 1836</a></p>
                         </div>
                         <div class="grid_2">
                             <h2>Sales &amp; Marketing</h2>
@@ -149,6 +153,8 @@
                         <div class="grid_3 tail">
                             <h2>Visit us for Cider</h2>
                             <p>Cellar door sales available at our Tap Room, located at our cidery in Silverdale.</p>
+                            <h2>New cellar door opening in October!</h2>
+                            <p><a style="border-bottom: 1px solid rgba(85,65,27, 0.2);" href="https://confirmsubscription.com/h/d/70DB7D1922B72023" target="_blank">Click here to keep updated</a></p>
                         </div>
                         <img src="$ThemeDir/img/map.gif" width="537" height="224" alt="" class="map" />
                     </div>
