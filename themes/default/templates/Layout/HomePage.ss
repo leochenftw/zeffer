@@ -132,31 +132,23 @@
                     <h1 class="grid_12">Contact Zeffer</h1>
                     <div class="grid_7 after border-bottom">
                         <div class="grid_2 alpha">
-                            <h2>Postal Address</h2>
-                            <p>4i Titan Place,<br>
-                            Silverdale,<br>
-                            Auckland<br>
-                            <a href="tel:09 215 6028">(09) 215 6028</a></p>
-                            <h2>Physical Address</h2>
+                            <h2>Our Address</h2>
                             <p>1747 Korokipo Rd, RD3, Fernhill<br>
-                            Hawke’s Bay 4185<br>
-                            <a href="tel:06 650 1836">(06) 650 1836</a></p>
+                            Hawke’s Bay 4185<br><br>
+                            <a href="tel:+64 6 650 1836">+64 6 650 1836</a></p>
                         </div>
                         <div class="grid_2">
                             <h2>Sales &amp; Marketing</h2>
                             <p><a href="mailto:josh@zeffer.co.nz">josh@zeffer.co.nz</a><br/>
-                            <a href="tel:021 223 2800">(021) 223 2800</a></p>
                             <h2>NZ Distributor</h2>
                             <p><a href="http://quenchcollective.co.nz" target="_blank">Quench Collective</a><br />
                             <a href="tel:0800 946 326">0800 946 326</a></p>
                         </div>
                         <div class="grid_3 tail">
-                            <h2>Visit us for Cider</h2>
-                            <p>Cellar door sales available at our Tap Room, located at our cidery in Silverdale.</p>
                             <h2>New cellar door opening in October!</h2>
-                            <p><a style="border-bottom: 1px solid rgba(85,65,27, 0.2);" href="https://confirmsubscription.com/h/d/70DB7D1922B72023" target="_blank">Click here to keep updated</a></p>
+                            <p><a href="https://confirmsubscription.com/h/d/70DB7D1922B72023" target="_blank">Click here to keep updated</a></p>
                         </div>
-                        <img src="$ThemeDir/img/map.gif" width="537" height="224" alt="" class="map" />
+                        <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x6d69b7b04a05a2ad:0xc1555f77cd924c9b?hl=en-AU" target="_blank"><img src="$ThemeDir/img/map.png" width="537" height="224" alt="" class="map" /></a>
                     </div>
                     <div class="grid_4">
                         <h2>Chat with Zeffer online</h2>

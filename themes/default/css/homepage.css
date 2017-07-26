@@ -479,6 +479,14 @@ section.background {
 	background: url(../img/sprites/newsletter.png) no-repeat;
 }
 
+#contact .grid_7 .tail a {
+    border-bottom: 1px solid rgba(85,65,27, 0.2);
+}
+
+#contact .grid_7 .tail a:hover {
+    border-bottom: 1px solid rgba(85,65,27, 1);
+}
+
 #the-qr {
 	position: fixed;
 	top: 50%;
@@ -866,6 +874,14 @@ a.flag-button:after {
         font-size: 18px;
         line-height: 20px;
     }
+
+    body.mobile #contact .grid_4 {
+        right: 0;
+    }
+
+    body.mobile #contact .contact a {
+        width: 75px;
+    }
 }
 
 
@@ -897,5 +913,9 @@ a.flag-button:after {
         height: 20px;
         font-size: 18px;
         line-height: 20px;
+    }
+
+    #contact h2 {
+        line-height: 1.2;
     }
 }
