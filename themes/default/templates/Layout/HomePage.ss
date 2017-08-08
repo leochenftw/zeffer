@@ -139,16 +139,15 @@
                         </div>
                         <div class="grid_2">
                             <h2>Sales &amp; Marketing</h2>
-                            <p><a href="mailto:josh@zeffer.co.nz">josh@zeffer.co.nz</a><br/>
+                            <p><a href="mailto:josh@zeffer.co.nz">josh@zeffer.co.nz</a></p>
+
+                        </div>
+                        <div class="grid_3 tail">
                             <h2>NZ Distributor</h2>
                             <p><a href="http://quenchcollective.co.nz" target="_blank">Quench Collective</a><br />
                             <a href="tel:0800 946 326">0800 946 326</a></p>
                         </div>
-                        <div class="grid_3 tail">
-                            <h2>New cellar door opening in October!</h2>
-                            <p><a href="https://confirmsubscription.com/h/d/70DB7D1922B72023" target="_blank">Click here to keep updated</a></p>
-                        </div>
-                        <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x6d69b7b04a05a2ad:0xc1555f77cd924c9b?hl=en-AU" target="_blank"><img src="$ThemeDir/img/map.png" width="537" height="224" alt="" class="map" /></a>
+                        <a style="display: block; clear: both;" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x6d69b7b04a05a2ad:0xc1555f77cd924c9b?hl=en-AU" target="_blank"><img src="$ThemeDir/img/map.png" width="537" height="224" alt="" class="map" /></a>
                     </div>
                     <div class="grid_4">
                         <h2>Chat with Zeffer online</h2>
